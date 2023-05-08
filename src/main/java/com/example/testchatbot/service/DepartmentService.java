@@ -26,7 +26,7 @@ public class DepartmentService {
     }
 
     public List<String> globalSearch(String regex){
-        return departmentRepository.findAllByNameContainingIgnoreCase(regex)
+        return departmentRepository.findAllByNameContaining(regex)
                 .stream()
                 .map(Department::getName)
                 .collect(Collectors.toList());
