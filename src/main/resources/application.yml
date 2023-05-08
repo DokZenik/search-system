@@ -1,0 +1,9 @@
+spring:
+  main:
+    web-application-type: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/newsoursedb
+    username: postgres
+    password: DanZ
+  jpa:
+    generate-ddl: true
