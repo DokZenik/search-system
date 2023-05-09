@@ -8,5 +8,5 @@ import java.util.List;
 public interface DepartmentRepository extends JpaRepository<Department, Long> {
     Department findDepartmentByName(String departmentName);
 
-    List<Department> findAllByNameContaining(String regex);
+    List<Department> findAllByNameContainingIgnoreCase(String regex);
 }
